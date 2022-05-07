@@ -1,4 +1,4 @@
-# client
+# boiler template started vue js 2 client
 
 ## Project setup
 ```
