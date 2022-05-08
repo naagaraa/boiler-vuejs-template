@@ -1,16 +1,19 @@
 <template>
   <div>
-    <AppNavigation/>
-    <RouterView/>
+    <component :is="layout">
+      <RouterView/>
+    </component>
   </div>
 </template>
 
 <script>
-import AppNavigation from './components/AppNavigationView.vue'
+const defaultLayout = 'BlankLayout';
 export default {
   name: "App",
-  components: {
-    AppNavigation
+  computed: {
+    layout() {
+      return this.$route.meta.layout || defaultLayout;
+    }
   }
 };
 </script>

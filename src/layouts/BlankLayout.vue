@@ -1,11 +1,13 @@
 <template>
-  <div class="container" >
-    <h1>Home</h1>
+  <div>
+    <slot/>
   </div>
 </template>
-
 <script>
 export default {
-  name: 'HomeView',
+  name: "BlankLayout",
 }
 </script>
+<style lang="">
+  
+</style>
